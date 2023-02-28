@@ -24,6 +24,11 @@ char auth[] = BLYNK_AUTH_TOKEN;
 char ssid[] = "G6PD_2.4G";
 char pass[] = "570610193";
 
+BLYNK_CONNECTED()
+{
+  Blynk.syncAll();
+}
+
 BLYNK_WRITE(V0)
 {
   if (param.asInt() == 1)
