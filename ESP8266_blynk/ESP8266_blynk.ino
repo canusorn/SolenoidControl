@@ -21,8 +21,8 @@ char auth[] = BLYNK_AUTH_TOKEN;
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "G6PD_2.4G";
-char pass[] = "570610193";
+char ssid[] = "vivo Y01";
+char pass[] = "110923 nnn";
 
 BLYNK_CONNECTED()
 {
@@ -34,10 +34,12 @@ BLYNK_WRITE(V0)
   if (param.asInt() == 1)
   {
     digitalWrite(CH1, LOW);
+    digitalWrite(CH4, LOW);
   }
   else
   {
     digitalWrite(CH1, HIGH);
+    digitalWrite(CH4, HIGH);
   }
 }
 BLYNK_WRITE(V1)
@@ -45,10 +47,12 @@ BLYNK_WRITE(V1)
   if (param.asInt() == 1)
   {
     digitalWrite(CH2, LOW);
+    digitalWrite(CH4, LOW);
   }
   else
   {
     digitalWrite(CH2, HIGH);
+    digitalWrite(CH4, HIGH);
   }
 }
 BLYNK_WRITE(V2)
@@ -56,10 +60,12 @@ BLYNK_WRITE(V2)
   if (param.asInt() == 1)
   {
     digitalWrite(CH3, LOW);
+    digitalWrite(CH4, LOW);
   }
   else
   {
     digitalWrite(CH3, HIGH );
+    digitalWrite(CH4, HIGH);
   }
 }
 BLYNK_WRITE(V3)
