@@ -35,11 +35,13 @@ BLYNK_WRITE(V0)
   {
     digitalWrite(CH1, LOW);
     digitalWrite(CH4, LOW);
+    Blynk.virtualWrite(V3, 1);
   }
   else
   {
     digitalWrite(CH1, HIGH);
     digitalWrite(CH4, HIGH);
+    Blynk.virtualWrite(V3, 0);
   }
 }
 BLYNK_WRITE(V1)
@@ -48,11 +50,13 @@ BLYNK_WRITE(V1)
   {
     digitalWrite(CH2, LOW);
     digitalWrite(CH4, LOW);
+    Blynk.virtualWrite(V3, 1);
   }
   else
   {
     digitalWrite(CH2, HIGH);
     digitalWrite(CH4, HIGH);
+    Blynk.virtualWrite(V3, 0);
   }
 }
 BLYNK_WRITE(V2)
@@ -61,11 +65,13 @@ BLYNK_WRITE(V2)
   {
     digitalWrite(CH3, LOW);
     digitalWrite(CH4, LOW);
+    Blynk.virtualWrite(V3, 1);
   }
   else
   {
     digitalWrite(CH3, HIGH );
     digitalWrite(CH4, HIGH);
+    Blynk.virtualWrite(V3, 0);
   }
 }
 BLYNK_WRITE(V3)
